@@ -7,8 +7,8 @@
 }
 
 
+
 body{
-    height: 100vh;
     box-sizing: border-box;
     background-color: rgb(7, 0, 52);
     color: white;
@@ -22,11 +22,11 @@ body{
     max-width: 30%;
     max-height:30%;
     border-radius: 15px;
-    border: 2px solid rgb(12, 184, 246);
+    border: 2px inset rgb(12, 184, 246);
 }
 
 .apresentacao{
-    margin: 10% 15%;
+    padding: 7.5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -52,18 +52,39 @@ body{
 .apresentacao__links{
     display: flex;
     justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    
 }
 
 .apresentacao__links__link{
-    background-color: rgb(12, 184, 246);
-    width: 280px;
+    /* background-color: rgb(12, 184, 246); */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border: 2px inset rgb(51, 200, 254);
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 10px;
     font-size: 26px;
     padding: 22px 0;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
     text-decoration: none;
 
+}
+
+.rodape {
+    color: black;
+    background-color:rgb(51, 200, 254) ;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
